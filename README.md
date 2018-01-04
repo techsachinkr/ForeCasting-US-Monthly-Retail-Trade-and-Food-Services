@@ -43,5 +43,5 @@ Critical Value (5%)             -2.871808
 Critical Value (10%)            -2.572241
 dtype: float64
 ```
-![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/rolling%20mean%20plot.png)
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/dickey-fuller%20test%20plot.png)
 
