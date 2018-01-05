@@ -45,3 +45,37 @@ dtype: float64
 ```
 ![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/dickey-fuller%20test%20plot.png)
 
+
+(b) Removing Trend and Seasonality
+
+Two techniques applied which are:-
+
+i) Differencing
+
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/differencing_output_plot.png)
+
+ii) Decomposition
+
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/decomposition_output_plot.png)
+
+### Modelling Data
+
+(a) Finding optimal ARIMA model order parameters
+
+i) Plotting ACF (Autocorrelation Function) to find optimal value of p
+
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/acf-plot.png)
+
+After looking into plot,most optimal value with postive correlation appears to be 10 so i'llbe using 10 as value of p.
+
+ii) Plotting PACF (Partial Autocorrelation Function) to find optimal value of q
+
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/pacf-plot.png)
+
+After looking into plot,most optimal value with postive correlation appears to be 10 so i'llbe using 10 as value of p.
+
+iii) Creating ARIMA model with p as 10 ,difference parameter d as 1, and q parameter as 0
+
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/ARIMA-Plot.png)
+
+So we got our final predictions with Test MSE: 26111455464.179
