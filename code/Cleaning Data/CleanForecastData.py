@@ -5,8 +5,7 @@ import pandas as pd
 from pandas import Series
 import matplotlib.pylab as plt
 import numpy as npy
-import os
-current_file = os.path.abspath(os.path.dirname('__file__'))
+
 datavalues = pd.read_csv('../../data/datavalues.csv')
 datatypes = pd.read_csv('../../data/datatypes.csv')
 dateparse = lambda dates: pd.datetime.strptime(dates, '%b-%y')
