@@ -5,12 +5,13 @@ import pandas as pd
 from pandas import Series
 import matplotlib.pylab as plt
 import numpy as npy
-
-datavalues = pd.read_csv('data/datavalues.csv')
-datatypes = pd.read_csv('data/datatypes.csv')
+import os
+current_file = os.path.abspath(os.path.dirname('__file__'))
+datavalues = pd.read_csv('../../data/datavalues.csv')
+datatypes = pd.read_csv('../../data/datatypes.csv')
 dateparse = lambda dates: pd.datetime.strptime(dates, '%b-%y')
-timeperiods = pd.read_csv('data/timeperiods.csv',parse_dates=['per_name'],date_parser=dateparse)
-categories = pd.read_csv('data/categories.csv')
+timeperiods = pd.read_csv('../../data/timeperiods.csv',parse_dates=['per_name'],date_parser=dateparse)
+categories = pd.read_csv('../../data/categories.csv')
 
 
 datavalues = pd.merge(left = datavalues,right = timeperiods,how = 'left',on=['per_idx'])
