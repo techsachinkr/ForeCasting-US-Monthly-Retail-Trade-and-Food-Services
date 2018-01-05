@@ -29,7 +29,7 @@ Now since in the above plot we can see that there is overall increasing trend so
  i) Plotting Rolling Statistics: 
  
  
-![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/rolling%20mean%20plot.png)
+![alt text](https://github.com/techsachinkr/ForeCasting-US-Monthly-Retail-Trade-and-Food-Services/blob/master/output%20plots/rolling%20mean%20and%20std%20plot.png)
 
 ii) Dickey-Fuller Test: 
 ```
